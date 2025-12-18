@@ -1,0 +1,24 @@
+# Excel Automation Pipeline - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core Data Manipulation
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Excel File Handling
+openpyxl>=3.1.0          # Read/write Excel files with formatting preservation
+xlrd>=2.0.1              # Read older .xls files (optional)
+
+# Database
+# SQLite is included with Python, no separate install needed
+
+# Optional: Enhanced Excel Writing
+xlsxwriter>=3.1.0        # Alternative Excel writer with more formatting options
+
+# Development Dependencies (optional)
+pytest>=7.4.0            # For running tests
+black>=23.0.0            # Code formatting
+flake8>=6.0.0            # Linting
+
+# Documentation (optional)
+markdown>=3.4.0          # For documentation generation

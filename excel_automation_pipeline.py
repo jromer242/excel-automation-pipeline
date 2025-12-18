@@ -33,7 +33,8 @@ class ExcelAnalyticsPipeline:
         }
         sales_df = pd.DataFrame(sales_data)
         sales_df['Total_Sale'] = sales_df['Quantity'] * sales_df['Unit_Price']
-        sales_df.to_excel('monthly_sales.xlsx', index=False)
+        # sales_df.to_excel('monthly_sales.xlsx', index=False)
+        sales_df.to_excel('sample_data/monthly_sales.xlsx', index=False)
         print("✓ Created monthly_sales.xlsx")
 
         # 2. Inventory Data (manual updates from warehouse)
@@ -46,7 +47,8 @@ class ExcelAnalyticsPipeline:
             'Supplier': random.choices(['Supplier X', 'Supplier Y', 'Supplier Z'], k=51)
         }
         inventory_df = pd.DataFrame(inventory_data)
-        inventory_df.to_excel('current_inventory.xlsx', index=False)
+        # inventory_df.to_excel('current_inventory.xlsx', index=False)
+        inventory_df.to_excel('sample_data/current_inventory.xlsx', index=False)
         print("✓ Created current_inventory.xlsx")
 
         # 3. Customer Data (from manual CRM spreadsheet)
@@ -58,7 +60,8 @@ class ExcelAnalyticsPipeline:
             'Credit_Limit': [random.choice([5000, 10000, 25000, 50000]) for _ in range(100)]
         }
         customer_df = pd.DataFrame(customer_data)
-        customer_df.to_excel('customer_list.xlsx', index=False)
+        # customer_df.to_excel('customer_list.xlsx', index=False)
+        customer_df.to_excel('sample_data/customer_list.xlsx', index=False)
         print("✓ Created customer_list.xlsx")
 
         return sales_df, inventory_df, customer_df

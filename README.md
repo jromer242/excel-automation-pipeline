@@ -183,7 +183,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Your Name**
 - LinkedIn: [jylesromer](https://linkedin.com/in/jylesromer)
 - GitHub: [@jromer242](https://github.com/jromer242)
-- Blog: [Your Blog](https://yourblog.com)
 
 ## 🌟 Acknowledgments
 
